@@ -22,25 +22,25 @@ This dataset is frequently used to introduce using machine learning techniques t
 
  I will Create a first *logistic regression* model using the `glm` function using the `train_imputed` dataframe with the `Survived` column as the target value (i.e. response variable), and `age_imputed` as the only feature (i.e. explanatory variable).
     
-     let's calculate the model's predictions on the training data (`train_imputed`) and Store the output dataframe with the two new columns (`pred` and `outcome`) in a variable called `model_1_preds`.
+  let's calculate the model's predictions on the training data (`train_imputed`) and Store the output dataframe with the two new columns (`pred` and `outcome`) in a variable called `model_1_preds`.
       
     
   
-    The accuracy calculated on the training data will often appear to be unusually high, because we have created the model explicitly to predict this data.
+  The accuracy calculated on the training data will often appear to be unusually high, because we have created the model explicitly to predict this data.
 
-    Therefore, Ie will use k-fold cross-validation to measure our model's performance on data that is has not seen. We will do this using the `cv.glm` function from the `boot` package. 
+  Therefore, Ie will use k-fold cross-validation to measure our model's performance on data that is has not seen. We will do this using the `cv.glm` function from the `boot` package. 
    
     
 
-    Then I will Train a second, multivariate logistic regression model, using the `age_imputed`, `SibSp`, `Pclass`, and `Sex` variables as predictor variables.
+  Then I will Train a second, multivariate logistic regression model, using the `age_imputed`, `SibSp`, `Pclass`, and `Sex` variables as predictor variables.
 
-      Run cross-validation on this model to calculate its error, which you should report.
+   Run cross-validation on this model to calculate its error, which you should report.
     
-    Now, let's train a third logistic regression model with interaction between some of the variables.
+ Now, let's train a third logistic regression model with interaction between some of the variables.
     
       
 
 
 This Titanic data was downloaded from [Kaggle.com](https://www.kaggle.com/c/titanic/overview), a website for data science competitions. Kaggle has already divided the data into training and test sets for us. The training data was in the `train.csv` file which we loaded in Exercise 1. The test data is in a file called `test.csv`, which contains all the same columns as the training set except for the  `Survived` column.
     
-    Using the the multivariate model, I will make run a prediction and save the results in a csv file then I will upload to Kaggle.
+  Using the the multivariate model, I will make run a prediction and save the results in a csv file then I will upload to Kaggle.
