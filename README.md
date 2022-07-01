@@ -18,41 +18,9 @@ More than half of the passengers and crew died, due in large part to poor safety
 This dataset presents the most up-to-date knowledge about the passengers that were on the *Titanic*, including whether or not they survived. The dataset was downloaded from Kaggle.com and has already been split into a training set (in the `train.csv` file) and test set (in the `train.csv` file).
 This dataset is frequently used to introduce using machine learning techniques that take multiple inputs and use them to predict an outcome, in this case whether a passenger is likely to have survived.
 
-The dataset contains the following variables:
-
-| Variable    | Description                                                           |
-| :-----------| :-------------------------------------------------------------------- |
-| `PassengerId`    | A unique number identifying each passenger.                          |
-| `Survived`  | Whether this passenger survived (0 = No; 1 = Yes). (This variable is not present in the test dataset file.)                     |
-| `Pclass`    | Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)                           |
-| `Name`      | Name                                                                  |
-| `Sex`       | Sex                                                                   |
-| `Age`       | Age                                                                   |
-| `SibSp`     | Number of Siblings or Spouses Aboard                                     |
-| `Parch`     | Number of Parents or Children Aboard                                     |
-| `Ticket`    | Ticket Number                                                         |
-| `Fare`      | Passenger Fare (British pound)                                        |
-| `Cabin`     | Cabin                                                                 |
-| `Embarked`  | Port of Embarkation (C = Cherbourg; Q = Queenstown; S = Southampton)  |
 
 
-Also note that the following definitions were used for `SibSp` and `Parch`:
-
-| Label        | Definition                                                                   |
-| :----------- | :--------------------------------------------------------------------        |
-| Sibling      | Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic      |
-| Spouse       | Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored) |
-| Parent       | Mother or Father of Passenger Aboard Titanic                                 |
-| Child        | Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic          |
-
-
-
-
-
-
-
-
-    I will Create a first *logistic regression* model using the `glm` function using the `train_imputed` dataframe with the `Survived` column as the target value (i.e. response variable), and `age_imputed` as the only feature (i.e. explanatory variable).
+ I will Create a first *logistic regression* model using the `glm` function using the `train_imputed` dataframe with the `Survived` column as the target value (i.e. response variable), and `age_imputed` as the only feature (i.e. explanatory variable).
     
      let's calculate the model's predictions on the training data (`train_imputed`) and Store the output dataframe with the two new columns (`pred` and `outcome`) in a variable called `model_1_preds`.
       
@@ -73,9 +41,6 @@ Also note that the following definitions were used for `SibSp` and `Parch`:
       
 
 
-
-
-
-    This Titanic data was downloaded from [Kaggle.com](https://www.kaggle.com/c/titanic/overview), a website for data science competitions. Kaggle has already divided the data into training and test sets for us. The training data was in the `train.csv` file which we loaded in Exercise 1. The test data is in a file called `test.csv`, which contains all the same columns as the training set except for the  `Survived` column.
+This Titanic data was downloaded from [Kaggle.com](https://www.kaggle.com/c/titanic/overview), a website for data science competitions. Kaggle has already divided the data into training and test sets for us. The training data was in the `train.csv` file which we loaded in Exercise 1. The test data is in a file called `test.csv`, which contains all the same columns as the training set except for the  `Survived` column.
     
     Using the the multivariate model, I will make run a prediction and save the results in a csv file then I will upload to Kaggle.
