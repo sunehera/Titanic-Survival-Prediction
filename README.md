@@ -44,3 +44,8 @@ This dataset is frequently used to introduce using machine learning techniques t
 This Titanic data was downloaded from [Kaggle.com](https://www.kaggle.com/c/titanic/overview), a website for data science competitions. Kaggle has already divided the data into training and test sets for us. The training data was in the `train.csv` file which we loaded in Exercise 1. The test data is in a file called `test.csv`, which contains all the same columns as the training set except for the  `Survived` column.
     
   Using the the multivariate model, I will make run a prediction and save the results in a csv file then I will upload to Kaggle.
+  
+  
+  
+  <img width="1081" alt="score titanic" src="https://user-images.githubusercontent.com/98371832/176894314-25e91b13-a837-4d67-afeb-d4a9ad355682.png">
+
